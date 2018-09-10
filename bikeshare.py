@@ -17,7 +17,7 @@ def city_input():
     print('Hello! I am Maandeep Singh! Let\'s explore some US bikeshare data!')
     print(' ')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    print('Enter the token of the city you want to analyze the data for:')
+    print('Enter the token or anme of the city you want to analyze the data for:')
     print('City: Token')
     print('Chicago: 1')
     print('New York: 2')
@@ -26,13 +26,13 @@ def city_input():
     city = input('Please choose the city for which you would like to see the Statistics: ')
     city = city.lower()
     while True:     # for handling the unexpected input by user
-            if city == '1':
+            if city == '1' or city == 'chicago':
                 print("\nChicago City! Okay Let's go further\n")
                 return 'chicago'
-            if city == '2':
+            if city == '2' or city == 'new york':
                 print("\nNew York City! Okay let's go further\n")
                 return 'new york city'
-            elif city == '3':
+            elif city == '3' or city == 'washington':
                 print("\nWashington! Okay let's go further\n")
                 return 'washington'
             # error handled by implementing 'else' and provided another option to input data
